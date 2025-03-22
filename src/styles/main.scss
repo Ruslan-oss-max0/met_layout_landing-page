@@ -1,8 +1,83 @@
+// #region page
+:root {
+  --main-dark: #161616;
+  --accent-main: #D12D35;
+  --plain-white: #fff;
+  --light-grey: #7E7E83;
+}
+
+html {
+  font-family: Cinzel, sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: var(--main-dark);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// #endregion
+
 // #region header
+
+.header {
+  padding: 25px 20px 40px;
+  background-image: url(../images/bg-image-mb.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__icons {
+  display: flex;
+  gap: 24px;
+}
+
+.header__middle {
+  margin-top: 129px;
+}
+
+.header__title {
+  color: var(--plain-white);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  text-align: center;
+  line-height: 100%;
+}
 
 // #endregion
 
 // #region icons
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.icon--phone {
+  background-image: url(../images/icons/phone-icon.png);
+}
+
+.icon--menu {
+  background-image: url(../images/icons/menu-icon.png);
+}
+
+.icon--close {
+  background-image: url(../images/icons/close-icon.png);
+}
 
 // #endregion
 
