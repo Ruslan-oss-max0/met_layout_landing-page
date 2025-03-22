@@ -1,23 +1,39 @@
 // #region page
 :root {
   --main-dark: #161616;
-  --accent-main: #D12D35;
+  --accent-main: #d12d35;
   --plain-white: #fff;
-  --light-grey: #7E7E83;
+  --light-grey: #7e7e83;
 }
 
-html {
+.page {
   font-family: Cinzel, sans-serif;
   font-size: 16px;
   line-height: 27px;
   font-weight: 400;
   color: var(--main-dark);
+
+  scroll-behavior: smooth;
 }
 
-body {
+.page__body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.page__menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.page__menu:target {
+  opacity: 1;
+  pointer-events: all;
 }
 
 // #endregion
@@ -25,7 +41,6 @@ body {
 // #region header
 
 .header {
-  padding: 25px 20px 40px;
   background-image: url(../images/bg-image-mb.png);
   height: 100vh;
   background-position: center;
@@ -39,11 +54,6 @@ body {
   align-items: center;
 }
 
-.header__icons {
-  display: flex;
-  gap: 24px;
-}
-
 .header__middle {
   margin-top: 129px;
 }
@@ -55,6 +65,99 @@ body {
   letter-spacing: -1.5px;
   text-align: center;
   line-height: 100%;
+}
+
+// #endregion
+
+// #region menu
+
+.top-bar {
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar__icons {
+  display: flex;
+  gap: 24px;
+}
+
+.top-bar__logo {
+  display: flex;
+}
+
+.menu {
+  height: 100vh;
+  background-color: var(--accent-main);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu__top {
+  margin-bottom: 32px;
+}
+
+.menu__nav {
+  margin-bottom: 32px;
+}
+
+.menu__content {
+  padding-inline: 20px;
+}
+
+.menu__phone-number {
+  display: block;
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--plain-white);
+  text-decoration: none;
+}
+
+.menu__call-to-order {
+  margin-top: 16px;
+  display: block;
+  padding-bottom: 7px;
+  width: fit-content;
+  border-bottom: 1px solid var(--plain-white);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: var(--plain-white);
+  text-decoration: none;
+}
+
+.menu__phone-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu__contact-info {
+  color: var(--plain-white);
+  font-size: 16px;
+  line-height: 27px;
+}
+
+// #endregion
+
+// #region nav
+
+.nav__link {
+  color: var(--plain-white);
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 // #endregion
