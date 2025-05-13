@@ -1,0 +1,36 @@
+:root {
+  --main-dark: #161616;
+  --accent-main: #d12d35;
+  --plain-white: #fff;
+  --light-grey: #7e7e83;
+}
+
+.page {
+  font-family: Cinzel, sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: var(--main-dark);
+
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  &__menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+
+    &:target {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}

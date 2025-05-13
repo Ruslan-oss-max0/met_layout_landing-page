@@ -1,0 +1,28 @@
+.header {
+  background-image: url(../images/bg-image-mb.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__middle {
+    margin-top: 129px;
+  }
+
+  &__title {
+    color: var(--plain-white);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    text-align: center;
+    line-height: 100%;
+  }
+}
+
+

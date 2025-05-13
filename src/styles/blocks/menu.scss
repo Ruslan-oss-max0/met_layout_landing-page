@@ -1,0 +1,53 @@
+.menu {
+  height: 100vh;
+  background-color: var(--accent-main);
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &__top {
+    margin-bottom: 32px;
+  }
+
+  &__nav {
+    margin-bottom: 32px;
+  }
+
+  &__content {
+    @include contentPaddingInline;
+  }
+
+  &__phone-number {
+    display: block;
+    font-size: 16px;
+    line-height: 27px;
+    color: var(--plain-white);
+    text-decoration: none;
+  }
+
+  &__call-to-order {
+    margin-top: 16px;
+    display: block;
+    padding-bottom: 7px;
+    width: fit-content;
+    border-bottom: 1px solid var(--plain-white);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: var(--plain-white);
+    text-decoration: none;
+  }
+
+  &__phone-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__contact-info {
+    color: var(--plain-white);
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+
