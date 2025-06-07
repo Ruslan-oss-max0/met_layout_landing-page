@@ -1,6 +1,4 @@
 :root {
-  --main-dark: #161616;
-  --accent-main: #d12d35;
   --plain-white: #fff;
   --light-grey: #7e7e83;
 }
@@ -10,7 +8,7 @@
   font-size: 16px;
   line-height: 27px;
   font-weight: 400;
-  color: var(--main-dark);
+  color: $main-dark;
 
   scroll-behavior: smooth;
 
